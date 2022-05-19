@@ -28,17 +28,23 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <section class='text-center notification' id="notify">Appointment Added to <code>localStorage</code> ✔️</section>
     <div class="container">
       <!-- Timeblocks go here -->
-      <!-- <div class="row time-block">
-        <p class="col-1 hour">9 PM</p>
-        <textarea class="col-10 present"></textarea>
-        <button class="col-1 saveBtn">save</button>
-      </div> -->
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="test.js"></script>
-  </body>
-</html>
+      <div id="hour-9" class="row time-block">
+        <div class="col-md-1 hour">
+          9AM
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour-10" class="row time-block">
+        <div class="col-md-1 hour">
+          10AM
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+     
